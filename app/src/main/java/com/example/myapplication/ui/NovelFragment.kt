@@ -25,6 +25,8 @@ class NovelFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentNovelBinding.inflate(inflater, container, false)
         val root = binding.root
+
+        // Create RecyclerView and attach its adapter
         val rv = binding.novelRv
         rv.layoutManager = LinearLayoutManager(activity)
         rv.adapter = NovelAdapter(listNovel)

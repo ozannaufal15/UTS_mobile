@@ -4,6 +4,6 @@
         android:id="@+id/navigation_novel"
         android:title="@string/novel"/>
     <item
-        android:id="@+id/navigation_nba_player"
+        android:id="@+id/navigation_movie"
         android:title="@string/nba_player"/>
 </menu>

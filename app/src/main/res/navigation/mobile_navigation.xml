@@ -11,9 +11,9 @@
         android:label="@string/novel"
         tools:layout="@layout/fragment_novel" />
     <fragment
-        android:id="@+id/navigation_nba_player"
-        android:name="com.example.myapplication.ui.NbaPlayerFragment"
+        android:id="@+id/navigation_movie"
+        android:name="com.example.myapplication.ui.MovieFragment"
         android:label="@string/nba_player"
-        tools:layout="@layout/fragment_nba_player" />
+        tools:layout="@layout/fragment_movie" />
 
 </navigation>

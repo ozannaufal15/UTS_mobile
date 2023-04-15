@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.collection.arrayMapOf
 import androidx.recyclerview.widget.RecyclerView
 
 
@@ -24,14 +25,17 @@ class NovelAdapter (val data: List<Novel>): RecyclerView.Adapter<NovelAdapter.My
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.itemImageView.setImageResource(data.get(position).idImageView)
-        holder.itemTitleView.text = data.get(position).toString()
+        holder.itemTitleView.text = data.get(position).title
         holder.itemDescView.text = data.get(position).writer
         holder.row.setOnClickListener {v ->
             run {
-                val toast = Toast.makeText(v.context, data.get(position).toString(), Toast.LENGTH_LONG)
+                val toast = Toast.makeText(v.context, data.get(position).toString(), Toast.LENGTH_SHORT)
                 toast.show()
                 val intent = Intent(v.context, DetailNovelActivity::class.java)
-                intent.putExtra("id", data.get(position).id)
+                intent.putExtra("novelImage", data.get(position).idImageView.toString())
+                intent.putExtra("novelTitle", data.get(position).title)
+                intent.putExtra("novelWriter", data.get(position).writer)
+                intent.putExtra("novelSynopsis", data.get(position).synopsis)
                 v.context.startActivity(intent)
             }
         }
