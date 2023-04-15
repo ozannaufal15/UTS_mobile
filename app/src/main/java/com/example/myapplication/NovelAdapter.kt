@@ -29,8 +29,6 @@ class NovelAdapter (val data: List<Novel>): RecyclerView.Adapter<NovelAdapter.My
         holder.itemDescView.text = data.get(position).writer
         holder.row.setOnClickListener {v ->
             run {
-                val toast = Toast.makeText(v.context, data.get(position).toString(), Toast.LENGTH_SHORT)
-                toast.show()
                 val intent = Intent(v.context, DetailNovelActivity::class.java)
                 intent.putExtra("novelImage", data.get(position).idImageView.toString())
                 intent.putExtra("novelTitle", data.get(position).title)

@@ -13,7 +13,7 @@
     <fragment
         android:id="@+id/navigation_movie"
         android:name="com.example.myapplication.ui.MovieFragment"
-        android:label="@string/nba_player"
+        android:label="@string/movie"
         tools:layout="@layout/fragment_movie" />
 
 </navigation>
