@@ -24,7 +24,7 @@ class Movie(var idImageView:Int,
                 Movie(R.drawable.sixthsense,"The Sixth Sense","1999",R.array.moviesixthsense),
                 Movie(R.drawable.everythingeverywhereallatonce,"Everything Everywhere All at Once","2022",R.array.movieeverythingeverywhereallatonce),
                 Movie(R.drawable.amancalledotto,"A Man Called Otto","2022",R.array.movieamancalledotto)
-            )
+            ).shuffled().take(size)
         }
     }
 }

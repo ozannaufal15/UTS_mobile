@@ -39,7 +39,7 @@ class DetailNovelActivity : AppCompatActivity() {
 
         binding.detailNovelImage.setImageResource(image!!)
         binding.detailNovelTitle.text = title
-        binding.detailNovelWriter.text = writer
+        binding.detailNovelWriter.text = "by $writer"
         binding.detailNovelYear.text = year
         binding.detailNovelGenre.text = genre
         binding.detailNovelInfo.text = overview

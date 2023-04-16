@@ -19,27 +19,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/detail_novel_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="title"
             android:textAlignment="center"
-            android:textSize="40sp"
             android:textColor="@color/black"
-            android:padding="5dp"
+            android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/detail_novel_image" />
+
         <TextView
             android:id="@+id/detail_novel_writer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
             android:text="writer"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:layout_marginBottom="10dp"
-            android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/detail_novel_title" />

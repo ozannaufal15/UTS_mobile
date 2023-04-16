@@ -27,9 +27,8 @@
             android:layout_height="wrap_content"
             android:text="title"
             android:textAlignment="center"
-            android:textSize="40sp"
-            android:padding="5dp"
             android:textColor="@color/black"
+            android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/detail_movie_image" />
@@ -38,11 +37,10 @@
             android:id="@+id/detail_movie_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
             android:text="year"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/detail_movie_title" />
