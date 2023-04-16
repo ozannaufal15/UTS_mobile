@@ -30,10 +30,10 @@ class NovelAdapter (val data: List<Novel>): RecyclerView.Adapter<NovelAdapter.My
         holder.row.setOnClickListener {v ->
             run {
                 val intent = Intent(v.context, DetailNovelActivity::class.java)
-                intent.putExtra("novelImage", data.get(position).idImageView.toString())
+                intent.putExtra("novelImage", data.get(position).idImageView)
                 intent.putExtra("novelTitle", data.get(position).title)
                 intent.putExtra("novelWriter", data.get(position).writer)
-                intent.putExtra("novelSynopsis", data.get(position).synopsis)
+                intent.putExtra("novelInfo", data.get(position).info)
                 v.context.startActivity(intent)
             }
         }

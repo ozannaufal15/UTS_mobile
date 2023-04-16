@@ -12,16 +12,22 @@ class DetailNovelActivity : AppCompatActivity() {
         binding = ActivityDetailNovelBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val image = intent?.extras?.getString("novelImage")
+        val image = intent?.extras?.getInt("novelImage")
         val title = intent?.extras?.getString("novelTitle")
         val writer = intent?.extras?.getString("novelWriter")
-        val synopsis = intent?.extras?.getString("novelSynopsis")
-        if (image != null) {
-            binding.detailNovelImage.setImageResource(image.toInt())
-        }
+        val info = intent?.extras?.getInt("novelInfo")
+        val arrInfo = resources.getStringArray(info!!)
+        val infoItemName = resources.getStringArray(R.array.novelinfoitemname)
+        binding.detailNovelImage.setImageResource(image!!)
         binding.detailNovelTitle.text = title
         binding.detailNovelWriter.text = writer
-        binding.detailNovelInfo.text = synopsis
+        binding.detailNovelYear.text = infoItemName[0]
+        binding.detailNovelYear.append("\n"+arrInfo[0])
+        binding.detailNovelGenre.text = infoItemName[1]
+        binding.detailNovelGenre.append("\n"+arrInfo[1])
+        binding.detailNovelInfo.text = infoItemName[2]
+        binding.detailNovelInfo.append("\n"+arrInfo[2])
+
 
         val toast = Toast.makeText(this, binding.detailNovelTitle.text, Toast.LENGTH_SHORT)
         toast.show()

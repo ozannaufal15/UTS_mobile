@@ -19,7 +19,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/detail_novel_title"
             android:layout_width="wrap_content"
@@ -27,10 +26,11 @@
             android:text="title"
             android:textAlignment="center"
             android:textSize="40sp"
+            android:textColor="@color/black"
+            android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/detail_novel_image" />
-
         <TextView
             android:id="@+id/detail_novel_writer"
             android:layout_width="wrap_content"
@@ -39,18 +39,52 @@
             android:textAlignment="center"
             android:textSize="20sp"
             android:layout_marginBottom="10dp"
+            android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/detail_novel_title" />
+        <TextView
+            android:id="@+id/detail_novel_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="year"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@id/half_guideline"
+            app:layout_constraintTop_toBottomOf="@id/detail_novel_writer"
+            app:layout_constraintWidth_percent="0.5"
+            />
+        <TextView
+            android:id="@+id/detail_novel_genre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="genre"
+            android:padding="5dp"
+            app:layout_constraintStart_toEndOf="@id/half_guideline"
+            app:layout_constraintTop_toBottomOf="@id/detail_novel_writer"
+            app:layout_constraintWidth_percent="0.5"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/half_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/detail_novel_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/detail_novel_genre"/>
         <TextView
             android:id="@+id/detail_novel_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="synopsis"
             android:textSize="20sp"
+            android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/detail_novel_writer" />
+            app:layout_constraintTop_toBottomOf="@id/detail_novel_divider" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
