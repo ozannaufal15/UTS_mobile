@@ -1,8 +1,16 @@
 package com.example.myapplication
 
+import android.graphics.Color
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
+import android.text.Spannable
+import android.text.SpannableStringBuilder
+import android.text.style.ForegroundColorSpan
+import android.text.style.StyleSpan
 import android.widget.Toast
+import androidx.core.content.withStyledAttributes
 import com.example.myapplication.databinding.ActivityDetailNovelBinding
 
 class DetailNovelActivity : AppCompatActivity() {
@@ -15,20 +23,32 @@ class DetailNovelActivity : AppCompatActivity() {
         val image = intent?.extras?.getInt("novelImage")
         val title = intent?.extras?.getString("novelTitle")
         val writer = intent?.extras?.getString("novelWriter")
-        val info = intent?.extras?.getInt("novelInfo")
-        val arrInfo = resources.getStringArray(info!!)
+        val arrInfo = resources.getStringArray(intent.extras?.getInt("novelInfo")!!)
         val infoItemName = resources.getStringArray(R.array.novelinfoitemname)
+        val overview = SpannableStringBuilder(infoItemName[2]+"\n\n"+arrInfo[2])
+        overview.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[2].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+        overview.setSpan(ForegroundColorSpan(Color.BLACK),0, overview.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+        val genre = SpannableStringBuilder(infoItemName[1]+"\n"+arrInfo[1])
+        genre.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[1].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+        genre.setSpan(ForegroundColorSpan(Color.BLACK),0, infoItemName[1].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+        val year = SpannableStringBuilder(infoItemName[0]+"\n"+arrInfo[0])
+        year.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[0].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+        year.setSpan(ForegroundColorSpan(Color.BLACK),0, infoItemName[0].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+
         binding.detailNovelImage.setImageResource(image!!)
         binding.detailNovelTitle.text = title
         binding.detailNovelWriter.text = writer
-        binding.detailNovelYear.text = infoItemName[0]
-        binding.detailNovelYear.append("\n"+arrInfo[0])
-        binding.detailNovelGenre.text = infoItemName[1]
-        binding.detailNovelGenre.append("\n"+arrInfo[1])
-        binding.detailNovelInfo.text = infoItemName[2]
-        binding.detailNovelInfo.append("\n"+arrInfo[2])
-
-
+        binding.detailNovelYear.text = year
+        binding.detailNovelGenre.text = genre
+        binding.detailNovelInfo.text = overview
+//overview
+//01234567
+        //genre
+        //01234
+        //year
+        //0123
         val toast = Toast.makeText(this, binding.detailNovelTitle.text, Toast.LENGTH_SHORT)
         toast.show()
     }

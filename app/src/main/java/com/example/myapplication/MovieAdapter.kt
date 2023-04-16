@@ -29,10 +29,10 @@ class MovieAdapter(val data: List<Movie>): RecyclerView.Adapter<MovieAdapter.MyV
                 val toast = Toast.makeText(v.context, data.get(position).toString(), Toast.LENGTH_SHORT)
                 toast.show()
                 val intent = Intent(v.context, DetailMovieActivity::class.java)
-                intent.putExtra("movieImage", data.get(position).idImageView.toString())
+                intent.putExtra("movieImage", data.get(position).idImageView)
                 intent.putExtra("movieTitle", data.get(position).title)
                 intent.putExtra("movieYear", data.get(position).year)
-                intent.putExtra("movieSynopsis", data.get(position).synopsis)
+                intent.putExtra("movieInfo", data.get(position).info)
                 v.context.startActivity(intent)
             }
         }

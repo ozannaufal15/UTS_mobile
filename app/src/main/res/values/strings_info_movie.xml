@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movieinfoitemname">
+        <item>Director</item>
+        <item>Genre</item>
+        <item>Overview</item>
+    </string-array>
+    <string-array name="moviebladerunner2049">
+        <item>Denis Villeneuve</item>
+        <item>Action · Drama · Mystery · Sci-Fi · Thriller</item>
+        <item>Blade Runner 2049 is a 2017 American epic neo-noir science fiction film directed by Denis Villeneuve and written by Hampton Fancher and Michael Green.
+            A sequel to the 1982 film Blade Runner, the film stars Ryan Gosling and Harrison Ford, with Ana de Armas, Sylvia Hoeks, Robin Wright, Mackenzie Davis, Dave Bautista,
+            and Jared Leto in supporting roles. Ford and Edward James Olmos reprise their roles from the original film. Gosling plays K, a Nexus-9 replicant "blade runner" who uncovers
+            a secret that threatens to destabilize society and the course of civilization.</item>
+    </string-array>
+    <string-array name="moviestarwars8">
+        <item>Rian Johnson</item>
+        <item>Action · Adventure · Fantasy · Sci-Fi</item>
+        <item>Star Wars: The Last Jedi is a 2017 American epic space opera film written and directed by Rian Johnson. Produced by Lucasfilm and
+            distributed by Walt Disney Studios Motion Pictures, it is the second installment of the Star Wars sequel trilogy, following
+            The Force Awakens, and the eighth episode of the nine-part "Skywalker saga". The film\'s ensemble cast includes Mark Hamill,
+            Carrie Fisher, Adam Driver, Daisy Ridley, John Boyega, Oscar Isaac, Andy Serkis, Lupita Nyong\'o,
+            Domhnall Gleeson, Anthony Daniels, Gwendoline Christie, Kelly Marie Tran, Laura Dern, and Benicio del Toro.
+            The Last Jedi follows Rey as she seeks the aid of Luke Skywalker, in hopes of turning the tide for the Resistance in the
+            fight against Kylo Ren and the First Order, while General Leia Organa, Finn, and Poe Dameron attempt to escape a First Order
+            attack on the dwindling Resistance fleet. The film features the first posthumous film performance by Fisher, who died in December
+            2016, and the film is dedicated to her memory.</item>
+    </string-array>
+    <string-array name="movietheoryofeverything">
+        <item>James Marsh</item>
+        <item>Biography · Drama · Romance</item>
+        <item>In the 1960s, Cambridge University student and future physicist Stephen Hawking (Eddie Redmayne) falls in love with fellow
+            collegian Jane Wilde (Felicity Jones). At 21, Hawking learns that he has motor neuron disease. Despite this -- and with Jane
+            at his side -- he begins an ambitious study of time, of which he has very little left, according to his doctor. He and Jane
+            defy terrible odds and break new ground in the fields of medicine and science, achieving more than either could hope to imagine.</item>
+    </string-array>
+    <string-array name="moviecoco">
+        <item>Lee Unkrich · Adrian Molina</item>
+        <item>Animation · Adventure · Comedy · Family · Fantasy · Music · Mystery</item>
+        <item>Despite his family\'s generations-old ban on music, young Miguel dreams of becoming an
+            accomplished musician like his idol Ernesto de la Cruz. Desperate to prove his talent, Miguel
+            finds himself in the stunning and colorful Land of the Dead. After meeting a charming trickster named
+            Héctor, the two new friends embark on an extraordinary journey to unlock the real story behind Miguel\'s family history.</item>
+    </string-array>
+    <string-array name="moviehitmansbodyguard">
+        <item>Patrick Hughes</item>
+        <item>Action · Comedy · Crime · Thriller</item>
+        <item>The world\'s top protection agent is called upon to guard the life of his mortal enemy,
+            one of the world\'s most notorious hit men. The relentless bodyguard and manipulative assassin have
+            been on the opposite end of the bullet for years and are thrown together for a wildly outrageous 24 hours.
+            During their journey from England to the Hague, they encounter high-speed car chases, outlandish boat escapades
+            and a merciless Eastern European dictator who is out for blood.</item>
+    </string-array>
+    <string-array name="moviekongskullisland">
+        <item>Jordan Vogt-Roberts</item>
+        <item>Action · Adventure · Fantasy · Sci-Fi</item>
+        <item>Scientists, soldiers and adventurers unite to explore a mythical, uncharted island in the Pacific Ocean.
+            Cut off from everything they know, they venture into the domain of the mighty Kong, igniting the ultimate
+            battle between man and nature. As their mission of discovery soon becomes one of survival, they must fight to escape
+            from a primal world where humanity does not belong.</item>
+    </string-array>
+    <string-array name="moviedarktower">
+        <item>Nikolaj Arcel</item>
+        <item>Action · Adventure · Fantasy · Sci-Fi · Western</item>
+        <item>Roland Deschain (Idris Elba), the last Gunslinger, is locked in an eternal battle with Walter
+            O\'Dim (Matthew McConaughey), also known as the Man in Black. The Gunslinger must prevent the Man in
+            Black from toppling the Dark Tower, the key that holds the universe together. With the fate of worlds at stake,
+            two men collide in the ultimate battle between good and evil.</item>
+    </string-array>
+    <string-array name="moviebabydriver">
+        <item>Edgar Wright</item>
+        <item>Action · Crime · Drama · Music</item>
+        <item>Talented getaway driver Baby (Ansel Elgort) relies on the beat of his personal soundtrack to be the best
+            in the game. After meeting the woman (Lily James) of his dreams, he sees a chance to ditch his shady lifestyle
+            and make a clean break. Coerced into working for a crime boss (Kevin Spacey), Baby must face the music as a doomed
+            heist threatens his life, love and freedom.</item>
+    </string-array>
+    <string-array name="moviepost">
+        <item>Steven Spielberg</item>
+        <item>Biography · Drama · History · Thriller · War</item>
+        <item>Katharine Graham is the first female publisher of a major American newspaper -- The Washington Post.
+            With help from editor Ben Bradlee, Graham races to catch up with The New York Times to expose a massive cover-up
+            of government secrets that spans three decades and four U.S. presidents. Together, they must overcome their differences
+            as they risk their careers -- and very freedom -- to help bring long-buried truths to light.</item>
+    </string-array>
+    <string-array name="moviegoodtime">
+        <item>Benny Safdie · Josh Safdie</item>
+        <item>Crime · Drama · Thriller</item>
+        <item>A bank robber stops at nothing to free his brother from prison, launching himself into
+            a nightlong odyssey through New York\'s dark and dangerous criminal underworld.</item>
+    </string-array>
+    <string-array name="movieshapeofwater">
+        <item>Guillermo del Toro</item>
+        <item>Drama · Fantasy · Romance</item>
+        <item>Elisa is a mute, isolated woman who works as a cleaning lady in a hidden, high-security government
+            laboratory in 1962 Baltimore. Her life changes forever when she discovers the lab\'s classified secret -- a mysterious,
+            scaled creature from South America that lives in a water tank. As Elisa develops a unique bond with her new friend,
+            she soon learns that its fate and very survival lies in the hands of a hostile government agent and a marine biologist.</item>
+    </string-array>
+    <string-array name="moviealiencovenant">
+        <item>Ridley Scott</item>
+        <item>Horror · Sci-Fi · Thriller</item>
+        <item>Bound for a remote planet on the far side of the galaxy, members (Katherine Waterston, Billy Crudup) of the colony
+            ship Covenant discover what they think to be an uncharted paradise. While there, they meet David (Michael Fassbender),
+            the synthetic survivor of the doomed Prometheus expedition. The mysterious world soon turns dark and dangerous when a
+            hostile alien life-form forces the crew into a deadly fight for survival.</item>
+    </string-array>
+    <string-array name="moviesplit">
+        <item>M. Night Shyamalan</item>
+        <item>Horror · Thriller</item>
+        <item>Though Kevin (James McAvoy) has evidenced 23 personalities to his trusted psychiatrist, Dr. Fletcher (Betty Buckley),
+            there remains one still submerged who is set to materialize and dominate all of the others. Compelled to abduct three
+            teenage girls led by the willful, observant Casey, Kevin reaches a war for survival among all of those contained
+            within him -- as well as everyone around him -- as the walls between his compartments shatter.</item>
+    </string-array>
+    <string-array name="moviesixthsense">
+        <item>M. Night Shyamalan</item>
+        <item>Drama · Mystery · Thriller</item>
+        <item>Young Cole Sear (Haley Joel Osment) is haunted by a dark secret: he is visited by ghosts. Cole is frightened by
+            visitations from those with unresolved problems who appear from the shadows. He is too afraid to tell anyone about
+            his anguish, except child psychologist Dr. Malcolm Crowe (Bruce Willis). As Dr. Crowe tries to uncover the truth about
+            Cole\'s supernatural abilities, the consequences for client and therapist are a jolt that awakens them both to something
+            unexplainable.</item>
+    </string-array>
+    <string-array name="movieeverythingeverywhereallatonce">
+        <item>Daniel Kwan · Daniel Scheinert</item>
+        <item>Action · Adventure · Comedy · Fantasy · Sci-Fi</item>
+        <item>Directed by Daniel Kwan and Daniel Scheinert, collectively known as Daniels, the film is a hilarious and
+            big-hearted sci-fi action adventure about an exhausted Chinese American woman (Michelle Yeoh) who can\'t seem to
+            finish her taxes.</item>
+    </string-array>
+    <string-array name="movieamancalledotto">
+        <item>Marc Forster</item>
+        <item>Comedy · Drama</item>
+        <item>Based on the comical and moving New York Times bestseller, A Man Called Otto tells the story of Otto Anderson
+            (Tom Hanks), a grumpy widower whose only joy comes from criticizing and judging his exasperated neighbors. When a
+            lively young family moves in next door, he meets his match in quick-witted and very pregnant Marisol, leading to
+            an unexpected friendship that will turn his world upside-down.</item>
+    </string-array>
+</resources>
