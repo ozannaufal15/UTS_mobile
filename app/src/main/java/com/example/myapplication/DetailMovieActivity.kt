@@ -8,6 +8,7 @@ import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
+import android.widget.Toast
 import com.example.myapplication.databinding.ActivityDetailMovieBinding
 
 class DetailMovieActivity : AppCompatActivity() {
@@ -17,7 +18,6 @@ class DetailMovieActivity : AppCompatActivity() {
         binding = ActivityDetailMovieBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //TODO get an Object of Movie
         val image = intent?.extras?.getInt("movieImage")
         val title = intent?.extras?.getString("movieTitle")
         val year = intent?.extras?.getString("movieYear")
@@ -41,5 +41,8 @@ class DetailMovieActivity : AppCompatActivity() {
         binding.detailMovieDirector.text = director
         binding.detailMovieGenre.text = genre
         binding.detailMovieInfo.text = overview
+
+        val toast = Toast.makeText(this, binding.detailMovieTitle.text, Toast.LENGTH_SHORT)
+        toast.show()
     }
 }

@@ -43,12 +43,7 @@ class DetailNovelActivity : AppCompatActivity() {
         binding.detailNovelYear.text = year
         binding.detailNovelGenre.text = genre
         binding.detailNovelInfo.text = overview
-//overview
-//01234567
-        //genre
-        //01234
-        //year
-        //0123
+
         val toast = Toast.makeText(this, binding.detailNovelTitle.text, Toast.LENGTH_SHORT)
         toast.show()
     }

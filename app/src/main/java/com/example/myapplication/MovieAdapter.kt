@@ -26,8 +26,6 @@ class MovieAdapter(val data: List<Movie>): RecyclerView.Adapter<MovieAdapter.MyV
         holder.itemDescView.text = data.get(position).year
         holder.row.setOnClickListener {v ->
             run {
-                val toast = Toast.makeText(v.context, data.get(position).toString(), Toast.LENGTH_SHORT)
-                toast.show()
                 val intent = Intent(v.context, DetailMovieActivity::class.java)
                 intent.putExtra("movieImage", data.get(position).idImageView)
                 intent.putExtra("movieTitle", data.get(position).title)
