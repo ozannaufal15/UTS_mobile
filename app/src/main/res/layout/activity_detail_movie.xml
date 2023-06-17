@@ -28,7 +28,6 @@
             android:layout_height="wrap_content"
             android:text="title"
             android:textAlignment="center"
-            android:textColor="@color/black"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

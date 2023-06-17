@@ -27,15 +27,12 @@ class DetailNovelActivity : AppCompatActivity() {
         val infoItemName = resources.getStringArray(R.array.novelinfoitemname)
         val overview = SpannableStringBuilder(infoItemName[2]+"\n\n"+arrInfo[2])
         overview.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[2].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        overview.setSpan(ForegroundColorSpan(Color.BLACK),0, overview.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         val genre = SpannableStringBuilder(infoItemName[1]+"\n"+arrInfo[1])
         genre.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[1].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        genre.setSpan(ForegroundColorSpan(Color.BLACK),0, infoItemName[1].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         val year = SpannableStringBuilder(infoItemName[0]+"\n"+arrInfo[0])
         year.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[0].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        year.setSpan(ForegroundColorSpan(Color.BLACK),0, infoItemName[0].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         binding.detailNovelImage.setImageResource(image!!)
         binding.detailNovelTitle.text = title

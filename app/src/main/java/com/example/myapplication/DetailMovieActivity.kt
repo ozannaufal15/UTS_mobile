@@ -25,15 +25,13 @@ class DetailMovieActivity : AppCompatActivity() {
         val infoItemName = resources.getStringArray(R.array.movieinfoitemname)
         val overview = SpannableStringBuilder(infoItemName[2]+"\n\n"+arrInfo[2])
         overview.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[2].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        overview.setSpan(ForegroundColorSpan(Color.BLACK),0, overview.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         val genre = SpannableStringBuilder(infoItemName[1]+"\n"+arrInfo[1])
         genre.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[1].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        genre.setSpan(ForegroundColorSpan(Color.BLACK),0, infoItemName[1].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         val director = SpannableStringBuilder(infoItemName[0]+"\n"+arrInfo[0])
         director.setSpan(StyleSpan(Typeface.BOLD),0, infoItemName[0].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        director.setSpan(ForegroundColorSpan(Color.BLACK),0, infoItemName[0].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+
 
         binding.detailMovieImage.setImageResource(image!!)
         binding.detailMovieTitle.text = title
